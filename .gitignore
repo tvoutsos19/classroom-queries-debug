@@ -18,11 +18,9 @@
 !/log/.keep
 !/tmp/.keep
 
-# Ignore pidfiles, but keep the directory.
-/tmp/pids/*
-!/tmp/pids/
-!/tmp/pids/.keep
-
+# Ignore uploaded files in development.
+/storage/*
+!/storage/.keep
 
 /public/assets
 .byebug_history
@@ -43,3 +41,4 @@ node_modules
 package-lock.json
 core.chrome*
 !vendor/
+.theia/.ltici_apitoken.yml
