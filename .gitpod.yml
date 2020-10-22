@@ -1,4 +1,4 @@
-image: jelaniwoods/appdev2020-msm-queries
+image: patrickmckernin/classroom-queries-debug-fall2020
 
 tasks:
   - init: bin/setup
