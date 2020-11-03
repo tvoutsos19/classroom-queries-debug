@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe "/departments" do
-  it "lists the names of each Department record" do
+  it "lists the names of each Department record", points: 1 do
     
     english = Department.new
     english.name = "English"
@@ -27,7 +27,7 @@ describe "/departments" do
 end
 
 describe "/departments/[DEPARTMENT ID]" do
-  it "displays the name of the Department record" do
+  it "displays the name of the Department record", points: 1 do
     
     english = Department.new
     english.name = "English"
@@ -53,7 +53,7 @@ describe "/departments/[DEPARTMENT ID]" do
 end
 
 describe "/departments/[DEPARTMENT ID]" do
-  it "displays the number of Courses in the Department" do
+  it "displays the number of Courses in the Department", points: 1 do
     
     english = Department.new
     english.name = "English"
@@ -80,7 +80,7 @@ describe "/departments/[DEPARTMENT ID]" do
 end
 
 describe "/departments/[DEPARTMENT ID]" do
-  it "displays the titles of the Courses in the Department" do
+  it "displays the titles of the Courses in the Department", points: 1 do
     
     english = Department.new
     english.name = "English"
@@ -118,7 +118,7 @@ describe "/departments/[DEPARTMENT ID]" do
 end
 
 describe "/departments/[DEPARTMENT ID]" do
-  it "displays the titles of the Courses in the Department as links to the Course page" do
+  it "displays the titles of the Courses in the Department as links to the Course page", points: 1 do
     
     english = Department.new
     english.name = "English"

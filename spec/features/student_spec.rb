@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe "/students" do
-  it "lists the first names of each Student" do
+  it "lists the first names of each Student", points: 1 do
     
     franny = Student.new
     franny.first_name = "Franny"
@@ -31,7 +31,7 @@ describe "/students" do
 end
 
 describe "/students" do
-  it "lists the last names of each Student" do
+  it "lists the last names of each Student", points: 1 do
     
     franny = Student.new
     franny.first_name = "Franny"
@@ -61,7 +61,7 @@ describe "/students" do
 end
 
 describe "/students" do
-  it "lists the email addresses of each Student" do
+  it "lists the email addresses of each Student", points: 1 do
     
     franny = Student.new
     franny.first_name = "Franny"
@@ -91,7 +91,7 @@ describe "/students" do
 end
 
 describe "/students" do
-  it "has a link 'Show details' to the details page of each Student" do
+  it "has a link 'Show details' to the details page of each Student", points: 1 do
     
     franny = Student.new
     franny.first_name = "Franny"
@@ -126,7 +126,7 @@ describe "/students" do
 end
 
 describe "/students/[STUDENT ID]" do
-  it "displays the number of courses the Student is enrolled in" do
+  it "displays the number of courses the Student is enrolled in", points: 1 do
     
     english = Department.new
     english.name = "English"
@@ -184,7 +184,7 @@ describe "/students/[STUDENT ID]" do
 end
 
 describe "/students/[STUDENT ID]" do
-  it "displays the titles of the courses the Student is enrolled in" do
+  it "displays the titles of the courses the Student is enrolled in", points: 1 do
     
     english = Department.new
     english.name = "English"
@@ -262,7 +262,7 @@ end
 
 
 describe "/students/[STUDENT ID]" do
-  it "the Course titles link to the details page of the Course" do
+  it "the Course titles link to the details page of the Course", points: 1 do
     
     english = Department.new
     english.name = "English"

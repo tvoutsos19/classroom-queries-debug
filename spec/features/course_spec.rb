@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe "/courses" do
-  it "lists the titles of each Course" do
+  it "lists the titles of each Course", points: 1 do
     
     english = Department.new
     english.name = "English"
@@ -39,7 +39,7 @@ describe "/courses" do
 end
 
 describe "/courses" do
-  it "lists the term offered for each Course" do
+  it "lists the term offered for each Course", points: 1 do
     
     english = Department.new
     english.name = "English"
@@ -77,7 +77,7 @@ describe "/courses" do
 end
 
 describe "/courses" do
-  it "lists the name of the Department for each Course" do
+  it "lists the name of the Department for each Course", points: 1 do
     
     english = Department.new
     english.name = "English"
@@ -114,7 +114,7 @@ describe "/courses" do
 end
 
 describe "/courses" do
-  it "has a link with the text 'Show details' to the details page of each Course" do
+  it "has a link with the text 'Show details' to the details page of each Course", points: 1 do
     
     english = Department.new
     english.name = "English"
@@ -156,7 +156,7 @@ describe "/courses" do
 end
 
 describe "/courses" do
-  it "has a link to the details page of each Course's Department" do
+  it "has a link to the details page of each Course's Department", points: 1 do
     
     english = Department.new
     english.name = "English"
@@ -195,7 +195,7 @@ describe "/courses" do
 end
 
 describe "/courses/[COURSE ID]" do
-  it "displays the name of the Course's Department" do
+  it "displays the name of the Course's Department", points: 1 do
     
     technology = Department.new
     technology.name = "Technology"
@@ -215,7 +215,7 @@ describe "/courses/[COURSE ID]" do
 end
 
 describe "/courses/[COURSE ID]" do
-  it "has a link to the details page of the Course's Department" do
+  it "has a link to the details page of the Course's Department", points: 1 do
     
     english = Department.new
     english.name = "English"
@@ -248,7 +248,7 @@ describe "/courses/[COURSE ID]" do
 end
 
 describe "/courses/[COURSE ID]" do
-  it "displays the number of enrollments there are for the Course" do
+  it "displays the number of enrollments there are for the Course", points: 1 do
     
     english = Department.new
     english.name = "English"
@@ -318,7 +318,7 @@ describe "/courses/[COURSE ID]" do
 end
 
 describe "/courses/[COURSE ID]" do
-  it "displays the names of the Students enrolled in the Course" do
+  it "displays the names of the Students enrolled in the Course", points: 1 do
     
     english = Department.new
     english.name = "English"
@@ -374,7 +374,7 @@ describe "/courses/[COURSE ID]" do
 end
 
 describe "/courses/[COURSE ID]" do
-  it "has the names of the enrolled Students link the student details page" do
+  it "has the names of the enrolled Students link the student details page", points: 1 do
     
     english = Department.new
     english.name = "English"
